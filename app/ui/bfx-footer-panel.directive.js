@@ -1,17 +1,19 @@
-angular
-  .module('bfx-common-widgets', [])
-  .directive('bfxWidget', bfxWidget);  
+'use strict';
 
-function bfxWidget() {
-  console.log('test');
+angular
+  .module('bfx-footer-panel', [])
+  .directive('bfxFooterPanel', bfxFooterPanelDirective);
+
+function bfxFooterPanelDirective() {
+
   var directive = {
     restrict: 'E',
     scope: {
       title: '='
     },
-    templateUrl: 'components/bfx-widget.directive.html',
+    templateUrl: 'ui/bfx-footer-panel.directive.html',
     link: linkFunction,
-    controller: WidgetController,
+    controller: BfxFooterPanelController,
     controllerAs: 'vm',
     bindToController: true
   };
@@ -23,9 +25,8 @@ function linkFunction(scope, element, attrs) {
   console.log('Link Scope: ' + scope);
 }
 
-WidgetController.$inject = ['$scope'];
+BfxFooterPanelController.$inject = ['$scope'];
 
-function WidgetController($scope) {
+function BfxFooterPanelController($scope) {
   console.log('Controller Scope: ' + $scope);
 }
-
