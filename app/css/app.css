@@ -3,7 +3,34 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.bfx-ui-panel {
+  border: 1px solid #777;
 }
+
+#bfx-main-panel {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#bfx-tools-panel {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#bfx-editor-panel {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#bfx-properties-panel {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+

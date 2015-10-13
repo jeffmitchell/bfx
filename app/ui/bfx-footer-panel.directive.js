@@ -21,12 +21,11 @@ function bfxFooterPanelDirective() {
 };
 
 function linkFunction(scope, element, attrs) {
-  console.log(element);
-  console.log('Link Scope: ' + scope);
+
 }
 
 BfxFooterPanelController.$inject = ['$scope'];
 
 function BfxFooterPanelController($scope) {
-  console.log('Controller Scope: ' + $scope);
+
 }

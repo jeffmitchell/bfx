@@ -9,7 +9,7 @@ angular.module('bfx-app', [
   'bfx-editor-panel',
   'bfx-properties-panel',
   'bfx-footer-panel',
-  'bfx-widget'
+  'bfx-tool'
 ]).config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/ui', {
       templateUrl: 'ui/bfx-main-panel.directive.html'

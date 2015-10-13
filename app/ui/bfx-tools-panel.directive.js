@@ -6,26 +6,14 @@ function bfxToolsPanelDirective() {
 
   var directive = {
     restrict: 'E',
-    scope: {
-      title: '='
-    },
     templateUrl: 'ui/bfx-tools-panel.directive.html',
-    link: linkFunction,
-    controller: BfxToolsPanelController,
-    controllerAs: 'vm',
-    bindToController: true
+    link: linkFunction
   };
   return directive;
 };
 
 function linkFunction(scope, element, attrs) {
-  console.log(element);
-  console.log('Link Scope: ' + scope);
+  console.log("break");
 }
 
-BfxToolsPanelController.$inject = ['$scope'];
-
-function BfxToolsPanelController($scope) {
-  console.log('Controller Scope: ' + $scope);
-}
 

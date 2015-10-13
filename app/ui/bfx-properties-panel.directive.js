@@ -19,13 +19,12 @@ function bfxPropertiesPanelDirective() {
 };
 
 function linkFunction(scope, element, attrs) {
-  console.log(element);
-  console.log('Link Scope: ' + scope);
+
 }
 
 BfxPropertiesPanelController.$inject = ['$scope'];
 
 function BfxPropertiesPanelController($scope) {
-  console.log('Controller Scope: ' + $scope);
+
 }
 

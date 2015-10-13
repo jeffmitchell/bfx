@@ -21,12 +21,11 @@ function bfxHeaderPanelDirective() {
 };
 
 function linkFunction(scope, element, attrs) {
-  console.log(element);
-  console.log('Link Scope: ' + scope);
+
 }
 
 BfxHeaderPanelController.$inject = ['$scope'];
 
 function BfxHeaderPanelController($scope) {
-  console.log('Controller Scope: ' + $scope);
+
 }
