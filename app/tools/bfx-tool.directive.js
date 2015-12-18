@@ -7,7 +7,8 @@ function bfxTool() {
   var directive = {
     restrict: 'E',
     scope: {
-      glyph: '=',
+      symbol: '=',
+      size: '=',
       label: '='
     },
     templateUrl: 'tools/bfx-tool.directive.html',
