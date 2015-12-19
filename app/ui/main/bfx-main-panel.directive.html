@@ -1,6 +1,6 @@
 <bfx-header-panel></bfx-header-panel>
 
-<div  id="bfx-main-panel" class="container-fluid">
+<div ng-controller="bfxMainPanelController" id="bfx-main-panel" class="container-fluid">
   <div class="row">
     <div id="bfx-tools-panel" class="col-md-2">
       <bfx-tools-panel></bfx-tools-panel>
@@ -13,5 +13,5 @@
     </div>
   </div>
 </div>
-
+<button ng-click="hookup()"></button>
 <bfx-footer-panel></bfx-footer-panel>

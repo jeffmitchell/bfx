@@ -12,14 +12,23 @@ function bfxTool() {
       label: '='
     },
     templateUrl: 'tools/bfx-tool.directive.html',
-    link: linkFunction
+    link: toolLinkFunction
   };
   return directive;
 };
 
-function linkFunction(scope, element, attrs) {
+function toolLinkFunction(scope, element, attrs) {
+  //TODO: Find why being called for every directive on page and not just bfx-tool
+
+    $(element).draggable({
+      helper: 'clone',
+      cursor: 'move',
+      revert: 'invalid'
+    });
 
 }
+
+
 
 
 

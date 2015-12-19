@@ -23,13 +23,14 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bfx-app.module.js"></script>
-    <script src="ui/bfx-main-panel.directive.js"></script>
-    <script src="ui/bfx-header-panel.directive.js"></script>
-    <script src="ui/bfx-tools-panel.directive.js"></script>
-    <script src="ui/bfx-tools-panel.controller.js"></script>
-    <script src="ui/bfx-editor-panel.directive.js"></script>
-    <script src="ui/bfx-properties-panel.directive.js"></script>
-    <script src="ui/bfx-footer-panel.directive.js"></script>
+    <script src="ui/main/bfx-main-panel.directive.js"></script>
+    <script src="ui/main/bfx-main-panel.controller.js"></script>
+    <script src="ui/header/bfx-header-panel.directive.js"></script>
+    <script src="ui/tools/bfx-tools-panel.directive.js"></script>
+    <script src="ui/tools/bfx-tools-panel.controller.js"></script>
+    <script src="ui/editor/bfx-editor-panel.directive.js"></script>
+    <script src="ui/properties/bfx-properties-panel.directive.js"></script>
+    <script src="ui/footer/bfx-footer-panel.directive.js"></script>
     <script src="tools/bfx-tool.directive.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,12 +42,16 @@
 
   <body>
 
-    <div ng-view></div>
+    <div ng-view ng-controller="bfxAppController">
+
+    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bower_components/bootstrap/dist/assets/js/ie10-viewport-bug-workaround.js"></script>

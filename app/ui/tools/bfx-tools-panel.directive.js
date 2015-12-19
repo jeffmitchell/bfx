@@ -6,13 +6,13 @@ function bfxToolsPanelDirective() {
 
   var directive = {
     restrict: 'E',
-    templateUrl: 'ui/bfx-tools-panel.directive.html',
-    link: linkFunction
+    templateUrl: 'ui/tools/bfx-tools-panel.directive.html',
+    link: toolsLinkFunction
   };
   return directive;
 };
 
-function linkFunction(scope, element, attrs) {
+function toolsLinkFunction(scope, element, attrs) {
   console.log("break");
 }
 

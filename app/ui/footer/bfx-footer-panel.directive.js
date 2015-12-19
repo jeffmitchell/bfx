@@ -11,8 +11,8 @@ function bfxFooterPanelDirective() {
     scope: {
       title: '='
     },
-    templateUrl: 'ui/bfx-footer-panel.directive.html',
-    link: linkFunction,
+    templateUrl: 'ui/footer/bfx-footer-panel.directive.html',
+    link: footerLinkFunction,
     controller: BfxFooterPanelController,
     controllerAs: 'vm',
     bindToController: true
@@ -20,8 +20,8 @@ function bfxFooterPanelDirective() {
   return directive;
 };
 
-function linkFunction(scope, element, attrs) {
-
+function footerLinkFunction(scope, element, attrs) {
+  console.log("footer");
 }
 
 BfxFooterPanelController.$inject = ['$scope'];

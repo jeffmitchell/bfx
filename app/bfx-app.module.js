@@ -12,6 +12,10 @@ angular.module('bfx-app', [
   'bfx-tool'
 ]).config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/ui', {
-      templateUrl: 'ui/bfx-main-panel.directive.html'
+      templateUrl: 'ui/main/bfx-main-panel.directive.html'
     });
-  }]);
+  }])
+
+.controller('bfxAppController', function($scope) {
+
+});

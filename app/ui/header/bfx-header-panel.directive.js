@@ -11,8 +11,8 @@ function bfxHeaderPanelDirective() {
     scope: {
       title: '='
     },
-    templateUrl: 'ui/bfx-header-panel.directive.html',
-    link: linkFunction,
+    templateUrl: 'ui/header/bfx-header-panel.directive.html',
+    link: headerLinkFunction,
     controller: BfxHeaderPanelController,
     controllerAs: 'vm',
     bindToController: true
@@ -20,7 +20,7 @@ function bfxHeaderPanelDirective() {
   return directive;
 };
 
-function linkFunction(scope, element, attrs) {
+function headerLinkFunction(scope, element, attrs) {
 
 }
 

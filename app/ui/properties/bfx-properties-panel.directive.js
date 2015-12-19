@@ -9,16 +9,13 @@ function bfxPropertiesPanelDirective() {
     scope: {
       title: '='
     },
-    templateUrl: 'ui/bfx-properties-panel.directive.html',
-    link: linkFunction,
-    controller: BfxPropertiesPanelController,
-    controllerAs: 'vm',
-    bindToController: true
+    templateUrl: 'ui/properties/bfx-properties-panel.directive.html',
+    link: propertiesLinkFunction
   };
   return directive;
 };
 
-function linkFunction(scope, element, attrs) {
+function propertiesLinkFunction(scope, element, attrs) {
 
 }
 
