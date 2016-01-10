@@ -20,12 +20,6 @@ function bfxEditorPanelDirective() {
 
 function editorLinkFunction(scope, element, attrs) {
 
-}
-
-BfxEditorPanelController.$inject = ['$scope'];
-
-function BfxEditorPanelController($scope) {
-
   //Here your view content is fully loaded !!
   $(".bfx-editor-panel").droppable({
     activeClass: 'blue',
@@ -37,6 +31,13 @@ function BfxEditorPanelController($scope) {
       return true;
     }
   });
+}
+
+BfxEditorPanelController.$inject = ['$scope'];
+
+function BfxEditorPanelController($scope) {
+
+
 
 
 }

@@ -23,7 +23,8 @@ function toolLinkFunction(scope, element, attrs) {
     $(element).draggable({
       helper: 'clone',
       cursor: 'move',
-      revert: 'invalid'
+      revert: 'invalid',
+      zIndex: 100
     });
 
 }
