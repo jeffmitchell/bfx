@@ -23,10 +23,19 @@ function editorLinkFunction(scope, element, attrs) {
   //Here your view content is fully loaded !!
   $(".bfx-editor-panel").droppable({
     activeClass: 'blue',
-    drop: function(event, ui) {
+    drop: function(event, draggableElement) {
       console.log("is acceptable test");
 
-      console.log(ui);
+      console.log(draggableElement);
+
+      var id = $(draggableElement.draggable).attr("id");
+
+      if (id == "bfx-tool-text") {
+        $(event.target).append("<p>Text</p>");
+      } else if (id == "bfx-tool-header") {
+        $(event.target).append("<h1>Header</h1>");
+      }
+
 
       return true;
     }
